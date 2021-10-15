@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Maze Management</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Threshold Correction Machine Maze</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="MainPage.html">Maze Page</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="stats.html">Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="MazeManagement.html">Maze Management</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-fluid pt-3">
+            <h1 class="text-center p-3 my-3 bg-dark text-white display-4">Maze Management</h1>
+            <div class="container-lg p-3 my-4 border">
+                <br>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <button type="button" class="btn btn-primary btn-block">Save</button>
+                                <br>
+                                <button type="button" class="btn btn-primary btn-block stretched-link" >New</button>
+                                <br>
+                                <button type="button" class="btn btn-primary btn-block">Load</button>
+                                <br>
+                                <button type="button" class="btn btn-primary btn-block">Upload</button>
+                                <br>
+                                <button type="button" class="btn btn-primary btn-block">Copy</button>
+                                <br>
+                                <button type="button" class="btn btn-primary btn-block">Rename</button>
+                                <br>
+                                <button type="button" class="btn btn-primary btn-block">Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <canvas id='mazeCanvas' width='800' height="600"></canvas>
+                            <script src="maze.js"></script>
+                            <div class="card-body">
+                                <h5 class="text-center">Current Maze</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Saved Mazes</h5>
+                                <button type="button" class="btn btn-outline-secondary btn-block stretched-link" >Maze 1</button>
+
+                                <button type="button" class="btn btn-outline-secondary btn-block">Maze 2</button>
+
+                                <button type="button" class="btn btn-outline-secondary btn-block">Maze 3</button>
+
+                                <button type="button" class="btn btn-outline-secondary btn-block">Maze 4</button>
+
+                                <button type="button" class="btn btn-outline-secondary btn-block">Maze 5</button>
+
+                                <button type="button" class="btn btn-outline-secondary btn-block">Maze 6</button>
+
+                                <button type="button" class="btn btn-outline-secondary btn-block">Maze 7</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

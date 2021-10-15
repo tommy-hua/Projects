@@ -1,0 +1,46 @@
+<html>
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>MazePage</title>
+
+  </head>
+  <body>
+	<div class="container" style="width:50%; margin-top:300px;">
+		<form class="form-horizontal" action="createaccount" method="POST">
+				<h1>Create an Account</h1>
+                <br>
+				<div class="form-group row">
+					<label class="control-label col-sm-2" for="username">Username:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+					</div>
+                </div>
+				<div class="form-group row">
+					<label class="control-label col-sm-2" for="email">E-mail:</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="email" name="email" placeholder="Enter e-mail">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="control-label col-sm-2" for="pwd">Password:</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="pwd" name="password" placeholder="Enter password">
+					</div>
+                </div>
+                <div class="form-group row">
+					<label class="control-label col-sm-2" for="repwd">Confirm Password:</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="repwd" name="repassword" placeholder="Re-type password">
+					</div>
+				</div>
+				<input type="submit" value="Submit" id="submitbtn" class="btn btn-primary btn-block" disabled="true">
+		</form>
+	</div>
+</body>
+</html>

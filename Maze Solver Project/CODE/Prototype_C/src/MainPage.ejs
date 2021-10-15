@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>MazePage</title>
+
+  </head>
+  <body onload="displayExistingMaze()">
+    <nav class="navbar navbar-expand-lg navbar-grey bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h3 style="color:grey;">Threshold Correction Machine Maze</h3>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <img class="" src="img/mazeIcon.jpg" alt="mazeIcon"  height="20" width="20">
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-7 border">
+          <div class="card-body">
+            <h5 class="text-center">Create a Maze!</h5>
+          </div>
+          <canvas id='mazeCanvas' width='900' height="600"></canvas>
+          <button onclick="solveMaze()">Solve!</button>
+          <button onclick="reset()">Reset</button>
+          <p id="outcome"></p>
+          <script src="maze.js"></script>
+        </div>
+        <div class="col border">
+          <h1 align='center'> Maze Display </h1>
+          <br/>
+          <a class="nav-link" href="/main">
+            <button type="button" class="btn btn-dark btn-block">Maze Display</button>
+          </a>
+          <br/>
+          <a class="nav-link" href="/stats">
+            <button type="button" class="btn btn-dark  btn-block">Stats</button>
+          </a>
+          <br/>
+          <a class="nav-link" href="/management">
+            <button type="button" class="btn btn-dark  btn-block">Maze Management</button>
+          </a>
+          <br>
+          <br>
+          <h2 align='center'> Try it yourself! </h2>
+          <br>
+          <h4 align='center'>Use you mouse to click (or click and drag) on the grey grid squares in order to turn them into black wall squares. Use this technique to build a maze with the green grid square as the starting point and the red grid square as the ending point. Once your maze is finished see if the algorithm can solve it by pressing the solve button below the maze. Use the reset button to clear the maze.</h4>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery, Popper.js and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
